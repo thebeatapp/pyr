@@ -310,3 +310,12 @@ class ExampleCollector implements CollectorInterface
     }
 }
 ```
+
+## Example
+
+Head to `examples/lumen-app` to check out the included example application.
+To get it you'll have to clone the `Pyr` repo, as it's not included when 
+downloaded from composer.
+
+The example is a full project containing it's own `README.md` so you can check the 
+library's functionality and the way it's intended to be used. 
