@@ -3,7 +3,7 @@ This application was created in order to be able to test various aspects
 and functionality of the prometheus exporter project. It may also act as 
 a dockerized test-bed installation of Lumen.
 
-![test application diagram](https://github.com/erifili117/lumen-example-app/blob/master/docs/example_app.png)
+![test application diagram](https://github.com/thebeatapp/pyr/blob/master/examples/lumen-app/docs/example_app.png)
 
 ## Installation
 In order to run this application you'll need [Docker](https://docs.docker.com/install/) 
