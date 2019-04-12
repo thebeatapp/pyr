@@ -3,7 +3,7 @@ This application was created in order to be able to test various aspects
 and functionality of the prometheus exporter project. It may also act as 
 a dockerized test-bed installation of Lumen.
 
-![test application diagram](https://github.com/thebeatapp/pyr/blob/master/examples/lumen-app/docs/example_app.png)
+![test application diagram](examples/lumen-app/docs/example_app.png)
 
 ## Installation
 In order to run this application you'll need [Docker](https://docs.docker.com/install/) 
@@ -121,5 +121,5 @@ make enough calls to see your metrics.
  An example view if you have completed the process successfully 
  should be: 
   
-![grafana example](https://github.com/thebeatapp/pyr/blob/master/examples/lumen-app/docs/grafana_example.png)
+![grafana example](examples/lumen-app/docs/grafana_example.png)
  
