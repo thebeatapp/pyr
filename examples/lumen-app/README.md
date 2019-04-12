@@ -105,3 +105,21 @@ To perform the update by yourself use:
 ```bash
 $ make provision
 ``` 
+
+The default Grafana credentials are:
+```
+username: admin
+password: admin
+```
+
+To check the diagrams containing metrics, head to your 
+given Grafana URL and click on `Home -> App Overview`.
+
+Prometheus scrapes every 30 seconds so be patient and 
+make enough calls to see your metrics.
+
+ An example view if you have completed the process successfully 
+ should be: 
+  
+![grafana example](https://github.com/thebeatapp/pyr/blob/master/examples/lumen-app/docs/grafana_example.png)
+ 
