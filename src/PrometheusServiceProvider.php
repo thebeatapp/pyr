@@ -7,6 +7,7 @@ namespace Beat\Pyr;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Str;
 use Prometheus\CollectorRegistry;
 use Prometheus\Storage\Adapter;
 
@@ -85,7 +86,7 @@ class PrometheusServiceProvider extends ServiceProvider
         $router = $this->app['router'];
 
         /** @var Route $route */
-        $isLumen = str_contains($this->app->version(), 'Lumen');
+        $isLumen = Str::contains($this->app->version(), 'Lumen');
         if ($isLumen) {
             $router->get(
                 config('prometheus.metrics_route_path'),
