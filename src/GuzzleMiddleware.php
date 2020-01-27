@@ -10,7 +10,7 @@ use Prometheus\Histogram;
 
 class GuzzleMiddleware
 {
-    const DEFAULT_GUZZLE_MESSAGE = 'No route given';
+    const NO_ROUTE = 'No route given';
 
     /**
      * @var Histogram
@@ -39,7 +39,7 @@ class GuzzleMiddleware
             $start = microtime(true);
             return $handler($request, $options)->then(
                 function (Response $response) use ($request, $start, $options) {
-                    $path = !empty($options['actionURI']) ? $options['actionURI'] : self::DEFAULT_GUZZLE_MESSAGE;
+                    $path = !empty($options['actionURI']) ? $options['actionURI'] : self::NO_ROUTE;
 
                     $this->histogram->observe(
                         microtime(true) - $start,
