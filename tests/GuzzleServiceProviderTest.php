@@ -31,7 +31,7 @@ class GuzzleServiceProviderTest extends TestCase
         /* @var \Prometheus\Histogram $histogram */
         $histogram = $this->app->get('prometheus.guzzle.client.histogram');
         $this->assertInstanceOf(Histogram::class, $histogram);
-        $this->assertSame(['method', 'external_endpoint', 'status_code'], $histogram->getLabelNames());
+        $this->assertSame(['method', 'external_endpoint', 'status_code', 'path'], $histogram->getLabelNames());
         $this->assertSame('app_guzzle_response_duration', $histogram->getName());
         $this->assertSame('Guzzle response duration histogram', $histogram->getHelp());
     }
