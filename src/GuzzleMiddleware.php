@@ -10,7 +10,7 @@ use Prometheus\Histogram;
 
 class GuzzleMiddleware
 {
-    const NO_ROUTE = 'No route given';
+    const NO_ROUTE = 'Undefined';
 
     /**
      * @var Histogram

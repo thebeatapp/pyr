@@ -31,7 +31,7 @@ class GuzzleMiddlewareTest extends TestCase
         $client = new Client(['handler' => $stack]);
         $client->get('http://example.org');
         $this->assertGreaterThan(0, $value);
-        $this->assertSame(['GET', 'example.org', 200, 'No route given'], $labels);
+        $this->assertSame(['GET', 'example.org', 200, 'Undefined'], $labels);
     }
 
     public function testMiddlewareWithOptions()
